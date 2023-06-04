@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        img{
+            height: 70px;
+            width: 210px;
+            text-align: center;
+            margin: auto;
+            margin-left: 850px;
+        }
+
+            #container{
+                height: 520px;
+                width:450px;
+                background-color:#fff;
+                margin: auto;
+                border: 0px solid rgba(23, 23, 23, 0.523);
+                border-radius:10px ;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+
+            input{
+                height: 40px;
+                width: 380px;
+                background-color: rgba(246, 252, 251, 0.989);
+                border: 1px solid rgba(10, 10, 10, 0.162);
+                margin: auto;
+                margin-top: 15px;
+                margin-left:20px ;
+                border-radius:10px ;
+            }
+            #id_password{
+                height: 40px;
+                width: 380px;
+                background-color: rgba(246, 252, 251, 0.989);
+                border: 1px solid rgba(10, 10, 10, 0.162);
+                margin: auto;
+                margin-top: 15px;
+                margin-left:20px ;
+                border-radius:10px ;
+
+            }
+
+            label{
+                margin-left: 20px;
+                margin-top: 10px;
+                color: rgba(16, 16, 16, 0.681);
+            }
+            h1{
+                text-align: center;
+                font-size: 24px;
+            }
+            p{
+                text-align: center;
+                color: rgba(16, 16, 16, 0.681);
+                font-size: 17px;
+                
+            }
+            a{
+                color: rgb(0, 145, 255);
+            }
+       #name{
+                height: 45px;
+                width: 380px;
+                background-color:  rgba(163, 159, 159, 0.862);
+                border: 1px solid rgba(0, 0, 0, 0.331);
+                margin: auto;
+                margin-top: 15px;
+                margin-left:20px ;
+                border-radius:10px ;
+                text-align: center;
+                font-size: 16px;
+                color: black;
+       }
+       h3{
+        text-align: center;
+                color: rgba(16, 16, 16, 0.681);
+
+       }
+       input::placeholder{
+        color: rgba(34, 33, 33, 0.477);
+        font-size: 16px;
+       }
+    
+        
+    </style>
+</head>
+<body>
+    <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="">
+
+    <div id="container">
+        <h1>sing up</h1>
+        <form>
+        
+        <label for="fname">Fullname:</label><br>
+       <input type="full name" id="lname" name="Fullname" placeholder="Enter your full name"><br>
+       <label for="lname">Email:</label><br>
+        <input type="text" id="lname" name="Email" placeholder="Enter Email">
+
+        <label for="lname">password:</label><br>
+        <input type="password" name="password" autocomplete="current-password" placeholder="Enter password" required="" id="id_password">
+        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+
+        <p>By signing up, I accept masai school<a>Terms of service</a> and acknowledge the <a>Privecy Policy</a> </p>
+        <input type="text" id="name" name="lname" placeholder="SING UP">
+        <h3>Already have an account?<a href="C:\Users\Systemonex\Desktop\beenu\anika\div.html" type="text" style="cursor: pointer;"  target="_blank">sing in</a></h3>
+    </form>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+    </script>
+</body>
+</html>
